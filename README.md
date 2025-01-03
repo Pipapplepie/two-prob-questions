@@ -33,7 +33,7 @@ Bonus: The methodology in this article is flawed. Can you explain why?
 
 By hypothesis testing, 
 
-our Hypothesis 1 $H_1$: the packets came from Cleveland; Hypothesis 2 $H_2$: they are from Hackettstown.
+our Hypothesis 0 $H_0$: the packets came from Cleveland; Hypothesis 1 $H_1$: they are from Hackettstown.
 
 $$ Pr(data | H_0) =  [C_n^r (0.131)^r] [C_{n-r}^o (0.205)^o] [C_{n-r-o}^y(0.135)^y] [C_{n-r-o-y}^g (0.198)^g] [C_{n-r-o-y-g}^b (0.207)^b] [C_{n-r-o-y-g-b}^br (0.124)^{br}]$$
 
