@@ -28,3 +28,17 @@ Hackettstown : Red=0.125, Orange=0.25, Yellow=0.125, Green=0.125, Blue=0.25, and
 Suppose you bought many packets of m&m, how can you determine which plant these packets came with statistical testing?
 
 Bonus: The methodology in this article is flawed. Can you explain why?
+
+## Ans: 
+
+By hypothesis testing, 
+
+our Hypothesis 1 $H_1$: the packets came from Cleveland; Hypothesis 2 $H_2$: they are from Hackettstown.
+
+$$ Pr(data | H_0) =  [C_n^r (0.131)^r] [C_{n-r}^o (0.205)^o] [C_{n-r-o}^y(0.135)^y] [C_{n-r-o-y}^g (0.198)^g] [C_{n-r-o-y-g}^b (0.207)^b] [C_{n-r-o-y-g-b}^br (0.124)^{br}]$$
+
+where n denotes the number of m&m candies in all packets, and $r$ denotes the number of red candies in them, same for $o,y,g,b,br$. $Pr(data | H_0)$ is the probability of the situation under Hypothesis 0.
+
+Set significance level $\alpha$ as 0.05. Reject $H_0$ if; $$Pr(data | H_0) < 0.05$$, i.e., Not enough evidence for "the packets are from Cleveland".
+
+Otherwise, accept Hypothesis 0.
